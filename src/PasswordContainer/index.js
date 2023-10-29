@@ -66,12 +66,14 @@ class PasswordContainer extends Component {
 
   renderImage = () => (
     <div className="noPasswordsContainer">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
-        alt="no passwords"
-        className="noPasswordsImage"
-      />
-      <p className="addPasswordHeading">No Passwords</p>
+      <div>
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
+          alt="no passwords"
+          className="noPasswordsImage"
+        />
+      </div>
+      <p className="addPasswordHeading">No passwords</p>
     </div>
   )
 
@@ -141,7 +143,7 @@ class PasswordContainer extends Component {
                 value={password}
               />
             </div>
-            <div className="buttonContainer">
+            <div className="buttonContainer" data-testid="delete">
               <button className="addButton" type="submit" data-testid="delete">
                 Add
               </button>
